@@ -25,7 +25,7 @@ tag:
 
 publish:
 ifeq ($(shell curl -s -XGET https://crates.io/api/v1/crates/lindera-cli | jq -r '.versions[].num' | grep $(LINDERA_CLI_VERSION)),)
-	(cd lindera-cli && cargo package && cargo publish)
+	cargo package && cargo publish
 endif
 
 docker-build:
