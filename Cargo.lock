@@ -505,9 +505,9 @@ checksum = "2448f6066e80e3bfc792e9c98bf705b4b0fc6e8ef5b43e5889aff0eaa9c58743"
 
 [[package]]
 name = "lindera"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f8b164cad49279b7dd4c9d315ccdbbf26c62a4468c47f2f54c3b32e1b1f62b9e"
+checksum = "b977348173c650e05901d6eb500909760797ae141eee350f33fb2be13e34b468"
 dependencies = [
  "bincode",
  "byteorder",
@@ -532,9 +532,9 @@ dependencies = [
 
 [[package]]
 name = "lindera-core"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "70e0deef9b9ed0cbc1fd54afa72dabb370ea93d7ccd23bfee5c97f879e9662a3"
+checksum = "96d20818efd096ed733c88c3d270fa7864266b49c3fc4c1461d558ba33b9b42a"
 dependencies = [
  "bincode",
  "byteorder",
@@ -545,9 +545,9 @@ dependencies = [
 
 [[package]]
 name = "lindera-dictionary"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "f7ba224da6ededc7a6bcb676870243ffbfa6213126c572e68acc021f0964bca7"
+checksum = "97bbc3b470958935506ae5e853d5023431d870707de9dac533f9105ca49da274"
 dependencies = [
  "bincode",
  "byteorder",
@@ -556,9 +556,9 @@ dependencies = [
 
 [[package]]
 name = "lindera-ipadic"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "28292eabf34f993fdd7de48b317727aae16c4432ee5f6b641ad011e10169f2d9"
+checksum = "efb5f89ed3808477debac931b3eba123d6c1f209b8bc2c45340b63f90b90226e"
 dependencies = [
  "bincode",
  "byteorder",
@@ -572,9 +572,9 @@ dependencies = [
 
 [[package]]
 name = "lindera-ipadic-builder"
-version = "0.6.0"
+version = "0.7.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "aa0651099c9cdd81354541d8d1143c94e0b1504a9c74864ff844e2f816e36977"
+checksum = "b1cf7fa9a511306bdf7a612b5ebb8c493be07e1b75e61d6e1bd08b596d6b3ebb"
 dependencies = [
  "bincode",
  "byteorder",
@@ -1419,6 +1419,6 @@ dependencies = [
 
 [[package]]
 name = "yada"
-version = "0.3.2"
+version = "0.4.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c880e66d4b603199c3aaf47c2234948bbc3580babe23f6296d8aa6704b7e0a16"
+checksum = "2bd411f1634003c5ec3ebd98534a3c8b98b1dc8939cdeb63208ba338f20f2cfb"

@@ -21,8 +21,8 @@ license = "MIT"
 clap = "2.33"
 stringreader = "0.1"
 
-lindera = "0.6"
-lindera-core = "0.6"
+lindera = "0.7"
+lindera-core = "0.7"
 
 [[bin]]
 name = "lindera"
