@@ -20,8 +20,8 @@ test:
 	cargo test
 
 tag:
-	git tag v$(LINDERA_VERSION)
-	git push origin v$(LINDERA_VERSION)
+	git tag v$(LINDERA_CLI_VERSION)
+	git push origin v$(LINDERA_CLI_VERSION)
 
 publish:
 ifeq ($(shell curl -s -XGET https://crates.io/api/v1/crates/lindera-cli | jq -r '.versions[].num' | grep $(LINDERA_CLI_VERSION)),)
