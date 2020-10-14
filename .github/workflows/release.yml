@@ -52,7 +52,7 @@ jobs:
       - uses: actions/upload-artifact@v1
         with:
           name: build-${{ matrix.target }}
-          path: lindera-cli-${{ matrix.target }}-${{ github.ref }}.zip
+          path: lindera-cli-${{ matrix.target }}.zip
 
   create-release:
     name: Create Release
@@ -100,8 +100,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.upload-url.outputs.url }}
-          asset_path: ./build-${{ matrix.target }}/lindera-cli-${{ matrix.target }}-${{ github.ref }}.zip
-          asset_name: lindera-cli-${{ matrix.target }}-${{ github.ref }}.zip
+          asset_path: ./build-${{ matrix.target }}/lindera-cli-${{ matrix.target }}.zip
+          asset_name: lindera-cli-${{ matrix.target }}.zip
           asset_content_type: application/zip
 
   publish-crates:
