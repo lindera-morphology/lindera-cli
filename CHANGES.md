@@ -3,6 +3,7 @@ All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## 0.7.1 (2020-10-13)
+- Fix release.yml #14 @mosuka
 - Fix release.yml #13 @mosuka
 - Update release.yml #12 @mosuka
 - Update workflows #11 @mosuka
