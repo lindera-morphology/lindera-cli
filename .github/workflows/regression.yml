@@ -14,7 +14,7 @@ jobs:
       matrix:
         os: [ubuntu-latest]
         toolchain: [stable]
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v1
       - uses: actions-rs/toolchain@v1

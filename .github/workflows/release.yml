@@ -22,6 +22,7 @@ jobs:
             os: windows-latest
           - target: x86_64-apple-darwin
             os: macos-latest
+        toolchain: [stable]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v1
@@ -105,14 +106,20 @@ jobs:
 
   publish-crates:
     name: Publish crate
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+        toolchain: [stable]
     needs: [upload-release]
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v1
       - uses: actions-rs/toolchain@v1
         with:
-          toolchain: nightly
-          components: rustfmt
+          profile: minimal
+          toolchain: ${{ matrix.toolchain }}
           override: true
-      - name: Run fmt check
-        run: cargo publish --token ${{ secrets.CRATES_TOKEN }}
+      - uses: actions-rs/cargo@v1
+        with:
+          command: publish
+          args: --token ${{ secrets.CRATES_TOKEN }}
