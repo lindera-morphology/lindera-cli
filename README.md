@@ -52,7 +52,7 @@ It is also possible to switch to the pre-built dictionary data instead of the de
 
 Please refer to the following repository for building an IPADIC dictionary:
 
-- <a href="https://github.com/lindera-morphology/lindera/lindera-ipadic-builder" target="_blank">Lindera IPADIC Builder</a>
+- <a href="https://github.com/lindera-morphology/lindera/tree/master/lindera-ipadic-builder" target="_blank">Lindera IPADIC Builder</a>
 
 The following example uses the pre-built IPADIC to tokenize:
 
@@ -303,7 +303,7 @@ You can also use the Docker container image already registered in docker.io like
 $ docker pull linderamorphology/lindera-cli:latest
 ```
 
-See https://hub.docker.com/r/linderamorphology/lindera-cli/tags/
+See https://hub.docker.com/r/linderamorphology/lindera-cli/tags
 
 ### Start on Docker
 
