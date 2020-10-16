@@ -6,9 +6,15 @@ A morphological analysis command-line interface for [Lindera](https://github.com
 
 ## Install
 
+You can install binary via cargo as follows:
+
 ```shell script
 % cargo install lindera-cli
 ```
+
+Alternatively, you can download a binary from the following release page:
+
+- https://github.com/lindera-morphology/lindera-cli/releases
 
 ## Build
 
