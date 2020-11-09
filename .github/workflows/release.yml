@@ -140,7 +140,7 @@ jobs:
       matrix:
         os: [ ubuntu-latest ]
         toolchain: [stable]
-    needs: [upload-release]
+    needs: [publish-crates]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v1
